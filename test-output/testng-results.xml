@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="56515" started-at="2021-04-19T04:49:30Z" finished-at="2021-04-19T04:50:26Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="56515" started-at="2021-04-19T04:49:30Z" finished-at="2021-04-19T04:50:26Z">
+      <class name="com.opencart.testscripts.OpenCartTestscripts">
+        <test-method status="FAIL" signature="beforemethod(java.lang.String)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@68c4039c]" name="beforemethod" is-config="true" duration-ms="0" started-at="2021-04-19T10:19:30Z" finished-at="2021-04-19T10:19:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.opencart.constants.ReadExcel.getRowCountInSheet(ReadExcel.java:45)
+	at com.opencart.testscripts.OpenCartTestscripts.beforemethod(OpenCartTestscripts.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="SKIP" signature="TC_Lumens_001()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@68c4039c]" name="TC_Lumens_001" duration-ms="1373" started-at="2021-04-19T10:20:25Z" finished-at="2021-04-19T10:20:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_Lumens_001 -->
+        <test-method status="SKIP" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@68c4039c]" name="aftermethod" is-config="true" duration-ms="0" started-at="2021-04-19T10:20:26Z" finished-at="2021-04-19T10:20:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+      </class> <!-- com.opencart.testscripts.OpenCartTestscripts -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
