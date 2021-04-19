@@ -31,7 +31,7 @@ public class ExtentManager {
 	        htmlReporter.config().setTheme(Theme.STANDARD);
 	        htmlReporter.config().setDocumentTitle(reportFileName);
 	        htmlReporter.config().setEncoding("utf-8");
-	        htmlReporter.config().setReportName("Lumens Test Report Created by--Pavani ");
+	        htmlReporter.config().setReportName("Open Cart Test Report");
 //	        htmlReporter.config().setTimeStampFormat("EEEE, MMMM dd, yyyy, hh:mm a '('zzz')'");
 	        
 	        

@@ -18,11 +18,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.opencart.utilities.Waits;
+
 public class BaseClass {
 		
 		public static WebDriver driver;
 		public static Properties prop;
 		public  static WebDriverWait wait;
+		public static String currentProjectDirectory = System.getProperty("user.dir");
 		
 	
 		public BaseClass() {
@@ -30,7 +33,7 @@ public class BaseClass {
 				prop = new Properties();
 				FileInputStream file;
 				try {
-					file = new FileInputStream("E:\\JavaPractice\\OpenCartRepo\\src\\main\\java\\com\\opencart\\"
+					file= new FileInputStream(currentProjectDirectory+"\\src\\main\\java\\com\\opencart\\"
 							+ "config\\config.properties");
 					prop.load(file);
 				} catch (FileNotFoundException e) {
@@ -42,24 +45,27 @@ public class BaseClass {
 		
 		public static WebDriver gotoChromeDriver() {
 			System.out.println("Script running by google chrome browser");
-			System.setProperty("webdriver.chrome.driver", "E:\\JavaPractice\\OpenCartRepo\\Drivers\\chromedriver.exe");
+			
+			System.setProperty("webdriver.chrome.driver", currentProjectDirectory+"\\Drivers\\chromedriver.exe");
 			WebDriver driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
-			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 //			driver.navigate().to(appURL);
 			driver.get(prop.getProperty("url"));
+			//Waits.waitThread(6000);
 			return driver;
 		}
 
 		public static WebDriver gotoFirefoxDriver() {
 			System.out.println("Script running by Firefox browser");
-			System.setProperty("webdriver.gecko.driver","E:\\JavaPractice\\OpenCartRepo\\Drivers\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", currentProjectDirectory+"\\Drivers\\geckodriver.exe");
 			WebDriver driver = new org.openqa.selenium.firefox.FirefoxDriver();
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			driver.get(prop.getProperty("url"));
+			//Waits.waitThread(6000);
 			return driver;
 		}
 		

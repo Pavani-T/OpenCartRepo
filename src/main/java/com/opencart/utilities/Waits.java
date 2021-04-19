@@ -12,6 +12,21 @@ public class Waits extends BaseClass{
 
 	public static long IMPLICIT_WAIT = 80;
 	
+	
+	
+	public static void waitThread(int ms) {
+		try {
+			Thread.sleep(ms);	
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+	}
+	
 	public static void waitperiod() {
 		
 		
@@ -19,7 +34,7 @@ public class Waits extends BaseClass{
 	}
 	
 	public static void waitForVisibility(WebElement element) {
-           new WebDriverWait(driver, 60)
+           new WebDriverWait(driver, 120)
                 .until(ExpectedConditions.visibilityOf(element));
     }
 }

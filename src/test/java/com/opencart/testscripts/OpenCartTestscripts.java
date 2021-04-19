@@ -1,21 +1,21 @@
 package com.opencart.testscripts;
 
-import java.io.IOException;
 
+
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.ITestResult;
-import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.opencart.constants.BaseClass;
-import com.opencart.constants.ReadExcel;
-import com.opencart.pages.Accountcreation;
-import com.opencart.pages.Addproduct;
-import com.opencart.pages.Mainpage;
-import com.opencart.utilities.Waits;
+
+import com.opencart.pages.HomePage;
+
+import com.opencart.pages.ProductPage;
+
 
 
 
@@ -25,181 +25,75 @@ public class OpenCartTestscripts extends BaseClass{
 	public OpenCartTestscripts() {
 		super();
 	}
-	Accountcreation acc;
-	//Addproduct prd;
-	//Mainpage main;
+	HomePage home;
+	ProductPage prod;
 	
 	@Parameters({"browser"})
 	@BeforeMethod
 		public void beforemethod(String browser) {
 		openURL(browser);
-		acc = new Accountcreation(); 
-		//prd= new Addproduct();
-		//main= new Mainpage();
-		try {
-			ReadExcel.setExcelFile("testdata");
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		ReadExcel.getRowCountInSheet();
+		home = new HomePage(); 
+		home.loginApp();
 	}
-	/*@Test(enabled=true,priority=3)
-	public void TC_Lumens_003() {
-		String actual=driver.getTitle();
-		Reporter.log(actual);
-		String expected= prop.getProperty("title");
-		Reporter.log(expected);
-		Assert.assertEquals(actual, expected, "Title matched");
-	}*/
+
 	
-	@Test(enabled=true,priority=1)
-	public void TC_Lumens_001() {
-		acc.clicksignin();
-		acc.createaccount();
-	}
-	/*@Test(enabled=true,priority=2)
-	public void TC_Lumens_002() {
-		acc.clicksignin();
-		acc.login();
-	}	
-	@Test(enabled=true,priority=4)
-	public void TC_Lumens_004() {
-		acc.clicksignin();
-		acc.login();
-		prd.findproduct();
-	}
- 
-	@Test(enabled=true,priority=5)
-	public void TC_Lumens_005() {
-		acc.clicksignin();
-		prd.findproduct();
-		prd.applyfilter();
-		
-	}
-	@Test(enabled= true,priority=6)
-	public void TC_Lumens_006() {
-		acc.clicksignin();
-		acc.login();
-		prd.findproduct();
-		Waits.waitperiod();
-		prd.applyfilter();
-		prd.addtocart();
-		
-	}
-	@Test(enabled =true,priority=7)
-    public void TC_Lumens_007() {
-        acc.clicksignin();
-        acc.login();
-        prd.findproduct();
-        Waits.waitperiod();
-        prd.applyfilter();
-        prd.addtocart();
-        prd.viewcart();
-    }
-	
-	@Test(enabled= true,priority=8)
-	public void TC_Lumens_008() {
-		acc.clicksignin();
-		acc.login();
-		main.searchproduct();
+	@Test(enabled = true, priority=1)
+	public void productAvailabitlyInCart() {
+
+		prod = new ProductPage();
+		prod.searchProduct.clear();
+		prod.searchProduct.sendKeys(prop.getProperty("product"));
+		prod.searchBtn.click();
+		prod.product(prop.getProperty("product")).click();
+		prod.qty.clear();
+		prod.qty.sendKeys(prop.getProperty("qty"));
+		prod.addToCart.click();
+		prod.cartItems.click();
+		prod.checkout.click();
+		String actValue = prod.alertMsg.getText().trim();
+		Assert.assertTrue(actValue.contains(prop.getProperty("alertMsg")));
+		prod.removeProduct.click();
 		
 	}
 	
-	@Test(enabled=true,priority=9)
-	public void TC_Lumens_009() {
-		main.gotolivechat();
-		try {
-			Thread.sleep(20000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+	@Test(enabled = true, priority=2)
+	public void removeProductFromCart() {
+
+		prod = new ProductPage();
+		Actions act = new Actions(driver);
+		act.moveToElement(prod.lapAndNoteProducts).click(prod.showAllLapAndNoteProducts).build().perform();
+		prod.product(prop.getProperty("lapTopProduct")).click();
+		prod.addToCart.click();
+		prod.cartItems.click();
+		prod.viewCart.click();
+		prod.removeProduct.click();
+		prod.continueBtn.click();
+		
+	}
+
+	
+	@Test(enabled = true, priority=3)
+	public void applyCouponCode() {
+
+		prod = new ProductPage();
+		Actions act = new Actions(driver);
+		act.moveToElement(prod.lapAndNoteProducts).click(prod.showAllLapAndNoteProducts).build().perform();
+		prod.product(prop.getProperty("lapTopProduct")).click();
+		prod.deliveryDate.clear();
+		prod.deliveryDate.sendKeys(prop.getProperty("deliveryDate"));
+		prod.qty.clear();
+		prod.qty.sendKeys(prop.getProperty("qty"));
+		prod.addToCart.click();
+		prod.cartItems.click();
+		prod.viewCart.click();
+		prod.useCouponCode.click();
+		prod.couponCode.clear();
+		prod.couponCode.sendKeys(prop.getProperty("couponCode"));
+		prod.applyCouponCode.click();
+		prod.removeProduct.click();
+		
 	}
 	
-    @Test(enabled=true,priority=10)
-	public void TC_Lumens_010() {
-			main.incorrectchat();
-			try {
-				Thread.sleep(20000);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}		
-	}
-
-    @Test(enabled=true,priority=11)
-    public void TC_Lumens_011() {
-        acc.clicksignin();
-        acc.login();
-        prd.findproduct();
-        Waits.waitperiod();
-        prd.applyfilter();
-        prd.addtocart();
-        prd.removeproduct();
-
-    }
-    @Test(enabled=true,priority=12)
-    public void TC_Lumens_012() {
-        acc.clicksignin();
-        acc.login();
-        prd.findproduct();
-        Waits.waitperiod();
-        prd.applyfilter();
-        Waits.waitperiod();
-        prd.addtocart();
-        Waits.waitperiod();
-        prd.couponcode();
-        
-    }
-
-        
-    @Test(enabled=true,priority=13)
-    public void TC_Lumens_013() {
-        acc.clicksignin();
-        acc.login();
-        acc.scrollpage();
-    }
-
-    @Test(enabled=true,priority=14)
-    public void TC_Lumens_014() {
-        acc.clicksignin();
-        acc.login();
-        main.searchproduct();
-        main.navigation();
-    }
-
-
-    @Test(enabled=true,priority=15)
-    public void TC_Lumens_015() {
-        acc.clicksignin();
-        acc.login();
-        prd.findproduct();
-        Waits.waitperiod();
-        prd.applyfilter();
-        Waits.waitperiod();
-        prd.addtocart();
-        prd.Zipmethod();
-
-    }
-    @Test(enabled=true,priority=16)
-    public void TC_Lumens_016() {
-        
-        acc.clicksignin();
-        acc.login();
-        main.gotocart();
-        main.incrementqty();
-
-    }
-
-
-
-
-    @Test(enabled=true,priority=17)
-    public void TC_Lumens_017() {
-        
-        acc.clicksignin();
-        acc.login();
-        acc.signout();        
-    }
-    */
 	@AfterMethod()
 		public void aftermethod(ITestResult result) {
 			String name = result.getName().toString().trim();
@@ -212,7 +106,8 @@ public class OpenCartTestscripts extends BaseClass{
 		    {
 		    	System.out.println(name+"-----failed");
 		    
-				String fileWithPath = "E:\\Shweta\\Flipkart\\screenshot\\";
+		    	String fileWithPath = System.getProperty("user.dir") + "/screenshots/";
+				//String fileWithPath = "E:\\Shweta\\Flipkart\\screenshot\\";
 				try {
 					takeSnapShot(driver, fileWithPath, name);
 				} catch (Exception e) {
@@ -223,6 +118,8 @@ public class OpenCartTestscripts extends BaseClass{
 		     else if(result.getStatus() == ITestResult.SKIP ){
 		        System.out.println(name+"---------Skiped");
 		     }
+			home = new HomePage(); 
+			home.logoutApp();			
 			driver.close();
 			driver.quit();
 			
