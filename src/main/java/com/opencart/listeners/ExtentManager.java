@@ -24,11 +24,10 @@ public class ExtentManager {
 	    //Create an extent report instance
 	    public static ExtentReports createInstance() {
 	        String fileName = getReportPath(reportFilepath);
-	       
 	        ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(fileName);
 	        htmlReporter.config().setTestViewChartLocation(ChartLocation.BOTTOM);
 	        htmlReporter.config().setChartVisibilityOnOpen(true);
-	        htmlReporter.config().setTheme(Theme.STANDARD);
+	        htmlReporter.config().setTheme(Theme.DARK);
 	        htmlReporter.config().setDocumentTitle(reportFileName);
 	        htmlReporter.config().setEncoding("utf-8");
 	        htmlReporter.config().setReportName("Open Cart Test Report");
