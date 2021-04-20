@@ -9,8 +9,15 @@
     <classes>
       <class name="com.opencart.testscripts.OpenCartTestscripts">
         <methods>
-          <include name="TC_Lumens_001"/>
+          <include name="whishListTest"/>
+          <include name="removeProductFromCart"/>
+          <include name="TC_OpenCart_007"/>
+          <include name="orderPlacementWithGuest"/>
           <include name="beforemethod"/>
+          <include name="aftermethod"/>
+          <include name="registerAccount"/>
+          <include name="emptyCouponCode"/>
+          <include name="applyCouponCode"/>
         </methods>
       </class> <!-- com.opencart.testscripts.OpenCartTestscripts -->
     </classes>

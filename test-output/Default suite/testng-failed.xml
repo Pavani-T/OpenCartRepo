@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.opencart.testscripts.AccountCreationTest">
+      <class name="com.opencart.testscripts.OpenCartTestscripts">
         <methods>
-          <include name="TC_Lumens_001"/>
+          <include name="TC_OpenCart_007"/>
+          <include name="orderPlacementWithGuest"/>
         </methods>
-      </class> <!-- com.opencart.testscripts.AccountCreationTest -->
+      </class> <!-- com.opencart.testscripts.OpenCartTestscripts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
