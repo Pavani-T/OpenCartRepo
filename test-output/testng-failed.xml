@@ -13,8 +13,10 @@
           <include name="removeProductFromCart"/>
           <include name="TC_OpenCart_007"/>
           <include name="orderPlacementWithGuest"/>
+          <include name="TC_OpenCart_008"/>
           <include name="beforemethod"/>
           <include name="aftermethod"/>
+          <include name="productAvailabitlyInCart"/>
           <include name="registerAccount"/>
           <include name="emptyCouponCode"/>
           <include name="applyCouponCode"/>

@@ -54,17 +54,8 @@ public class OpenCartTestscripts extends BaseClass {
 		op = new OrderPlacement();
 		cc = new CouponCode();
 		wl = new WishList();
-		/*
-		 * try { ReadExcel.setExcelFile("testdata"); } catch (IOException e) {
-		 * e.printStackTrace(); } ReadExcel.getRowCountInSheet();
-		 */
+
 	}
-	/*
-	 * @Test(enabled=true,priority=3) public void TC_Lumens_003() { String
-	 * actual=driver.getTitle(); Reporter.log(actual); String expected=
-	 * prop.getProperty("title"); Reporter.log(expected);
-	 * Assert.assertEquals(actual, expected, "Title matched"); }
-	 */
 
 	@Test(enabled = true, priority = 1)
 	public void registerAccount() {
@@ -83,36 +74,38 @@ public class OpenCartTestscripts extends BaseClass {
 	public void login() {
 		lp.clickLogin();
 	}
-	@Test(enabled=true,priority=3)
-    public void verifyTitle()
-    {
-        String actual = driver.getTitle();
-        Reporter.log(actual);
-        String expected= prop.getProperty("title");
-        Reporter.log(expected);
-        Assert.assertEquals(actual, expected, "Title matched");
-    }
-    
-    @Test(enabled=true,priority=4)
-    public void addToCart() throws InterruptedException
-    {
-    	at.click();
-    	at.scrollpage();
-    	at.addtocart();
-        Thread.sleep(2000);
-        /*String fileWithPath = "E:\\JavaPractice\\OpenCartRepo\\screenshot";
-          try {
-        
-            takeSnapShot(driver, fileWithPath, "TC_OpenCart_004");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }*/
-    }
+
+	@Test(enabled = true, priority = 3)
+	public void verifyTitle() {
+		String actual = driver.getTitle();
+		Reporter.log(actual);
+		String expected = prop.getProperty("title");
+		Reporter.log(expected);
+		Assert.assertEquals(actual, expected, "Title matched");
+	}
+
+	@Test(enabled = true, priority = 4)
+	public void addToCart() throws InterruptedException {
+		at.click();
+		at.scrollpage();
+		at.addtocart();
+		Thread.sleep(2000);
+
+	}
 
 	@Test(enabled = false, priority = 4)
 	public void uploadFile() {
-		fu.productSelection();
-		fu.addToCartOptions();
+		fu.Productselection();
+		fu.Addtocartoptions();
+	}
+
+	@Test(enabled = true, priority = 8)
+	public void TC_OpenCart_008() {
+
+		acc.clicksignin();
+		lp.clickLogin();
+		acc.editAccount();
+		acc.navigateToHomePage();
 	}
 
 	@Test(enabled = true, priority = 5)
@@ -126,13 +119,10 @@ public class OpenCartTestscripts extends BaseClass {
 		op.guestBillingDetails();
 		op.addDeliveryComment();
 		op.confirmOrder();
-		
-		
-		
+
 		try {
 			Thread.sleep(10000);
 		} catch (InterruptedException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
 
@@ -140,7 +130,6 @@ public class OpenCartTestscripts extends BaseClass {
 		try {
 			takeSnapShot(driver, fileWithPath, "GuestCheckout_Confirm-Order");
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -199,15 +188,14 @@ public class OpenCartTestscripts extends BaseClass {
 	@Test(enabled = true, priority = 11)
 	public void removeProductFromCart() {
 
-		// ActionsClass.actionCode(ap.lapAndNoteProducts);
-		
-		 Actions act = new Actions(driver);
-		  act.moveToElement(ap.lapAndNoteProducts).click(ap.
-		  showAllLapAndNoteProducts).build().perform();
-		  ap.product(prop.getProperty("lapTopProduct")).click();
-		  ap.addToCart.click(); ap.cartItems.click(); ap.viewCart.click();
-		  ap.removeProduct.click(); ap.continueBtn.click();
-		 
+		Actions act = new Actions(driver);
+		act.moveToElement(ap.lapAndNoteProducts).click(ap.showAllLapAndNoteProducts).build().perform();
+		ap.product(prop.getProperty("lapTopProduct")).click();
+		ap.addToCart.click();
+		ap.cartItems.click();
+		ap.viewCart.click();
+		ap.removeProduct.click();
+		ap.continueBtn.click();
 
 	}
 
@@ -215,48 +203,43 @@ public class OpenCartTestscripts extends BaseClass {
 	public void applyCouponCode() {
 
 		// ActionsClass.actionCode(ap.lapAndNoteProducts);
-		
-		  Actions act = new Actions(driver);
-		  act.moveToElement(ap.lapAndNoteProducts).click(ap.
-		  showAllLapAndNoteProducts).build().perform();
-		  ap.product(prop.getProperty("lapTopProduct")).click();
-		  ap.deliveryDate.clear();
-		  ap.deliveryDate.sendKeys(prop.getProperty("deliveryDate"));
-		  ap.qty.clear(); ap.qty.sendKeys(prop.getProperty("qty"));
-		  ap.addToCart.click(); ap.cartItems.click(); ap.viewCart.click();
-		  ap.useCouponCode.click(); ap.couponCode.clear();
-		  ap.couponCode.sendKeys(prop.getProperty("couponCode"));
-		  ap.applyCouponCode.click(); ap.removeProduct.click();
-		 
+
+		Actions act = new Actions(driver);
+		act.moveToElement(ap.lapAndNoteProducts).click(ap.showAllLapAndNoteProducts).build().perform();
+		ap.product(prop.getProperty("lapTopProduct")).click();
+		ap.deliveryDate.clear();
+		ap.deliveryDate.sendKeys(prop.getProperty("deliveryDate"));
+		ap.qty.clear();
+		ap.qty.sendKeys(prop.getProperty("qty"));
+		ap.addToCart.click();
+		ap.cartItems.click();
+		ap.viewCart.click();
+		ap.useCouponCode.click();
+		ap.couponCode.clear();
+		ap.couponCode.sendKeys(prop.getProperty("couponCode"));
+		ap.applyCouponCode.click();
+		ap.removeProduct.click();
 
 	}
-	
-	
-	@Test(enabled = true, priority = 13)
-    public void emptyCouponCode() throws Exception{
-		
-		lp.clickLogin();
-        cc.Empty_Couponcode();
-        cc.Estimate_Shipping();
-        cc.BillingDetails();
-        
-    }
-    
-    /*@Test(enabled = true, priority = 14)
-    public void estimateShipping() throws InterruptedException{
-        
-    	
-        //scroll.scrol_page();
-        
-    }*/
-    @Test(enabled = true, priority = 15)
-    public void whishListTest() throws InterruptedException{
-    	
-        wl.wishlist_method();
-        
-    }
 
-	@Test(enabled = false, priority = 16)
+	@Test(enabled = true, priority = 13)
+	public void emptyCouponCode() throws Exception {
+
+		lp.clickLogin();
+		cc.Empty_Couponcode();
+		cc.Estimate_Shipping();
+		cc.BillingDetails();
+
+	}
+
+	@Test(enabled = true, priority = 15)
+	public void whishListTest() throws InterruptedException {
+
+		wl.wishlist_method();
+
+	}
+
+	@Test(enabled = true, priority = 16)
 	public void orderHistory() throws Exception {
 
 		oh.orderHistoryView();
@@ -282,9 +265,7 @@ public class OpenCartTestscripts extends BaseClass {
 		} else if (result.getStatus() == ITestResult.SKIP) {
 			System.out.println(name + "---------Skiped");
 		}
-		/*
-		 * driver.close(); driver.quit();
-		 */
+		
 
 	}
 

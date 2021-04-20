@@ -24,10 +24,7 @@ public class CouponCode extends BaseClass {
 	
 	@FindBy(xpath = "//span[@class='hidden-xs hidden-sm hidden-md'][contains(.,'Shopping Cart')]")
 	 WebElement shoppingcart;
-	 /*
-	 * @FindBy(xpath = "//a[contains(@aria-expanded,'true')]") WebElement
-	 * couponcode;
-	 */
+	
 	 @FindBy(xpath = "//a[contains(.,'Use Coupon Code')]")
 	 WebElement couponcode;
 	 @FindBy(xpath = "//input[@id='button-coupon']")
