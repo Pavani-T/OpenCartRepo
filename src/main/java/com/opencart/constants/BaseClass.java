@@ -1,5 +1,5 @@
 /*
- * *
+ * *Base Class
  */
 
 package com.opencart.constants;
@@ -51,7 +51,6 @@ public class BaseClass {
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-//			driver.navigate().to(appURL);
 			driver.get(prop.getProperty("url"));
 			return driver;
 		}

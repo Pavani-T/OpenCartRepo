@@ -73,7 +73,7 @@ public class FileUpload extends BaseClass {
 		dropdownoption.selectByValue("3");
 		TextArea.clear();
 		TextArea.sendKeys("Hello");
-		UploadFile();
+		//UploadFile();
 		DateFormat dateFormat = new SimpleDateFormat("dd/MM/yy");
 		Date today = Calendar.getInstance().getTime();
 		String date = dateFormat.format(today);

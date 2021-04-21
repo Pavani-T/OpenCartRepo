@@ -31,6 +31,7 @@ public class OpenCartTestscripts extends BaseClass {
 		super();
 	}
 
+	OpenCartTestscripts open;
 	Accountcreation acc;
 	LoginPage lp;
 	OrderHistory oh;
@@ -42,7 +43,7 @@ public class OpenCartTestscripts extends BaseClass {
 	AddToCart at;
 
 	@Parameters({ "browser" })
-	@BeforeTest
+	@BeforeMethod
 	public void beforemethod(String browser) throws FileNotFoundException {
 		openURL(browser);
 		acc = new Accountcreation();
@@ -54,15 +55,18 @@ public class OpenCartTestscripts extends BaseClass {
 		op = new OrderPlacement();
 		cc = new CouponCode();
 		wl = new WishList();
+		open = new OpenCartTestscripts();
 
 	}
 
+	// Register
 	@Test(enabled = true, priority = 1)
 	public void registerAccount() {
 		acc.clicksignin();
 		acc.createAccount();
 	}
 
+	// RegisterWithoutPhone
 	@Test(enabled = true, priority = 2)
 	public void registerAccountFailure() {
 		acc.clicksignin();
@@ -70,11 +74,13 @@ public class OpenCartTestscripts extends BaseClass {
 
 	}
 
+	// Login
 	@Test(enabled = true, priority = 3)
 	public void login() {
 		lp.clickLogin();
 	}
 
+	// VerifyTitle
 	@Test(enabled = true, priority = 3)
 	public void verifyTitle() {
 		String actual = driver.getTitle();
@@ -84,6 +90,7 @@ public class OpenCartTestscripts extends BaseClass {
 		Assert.assertEquals(actual, expected, "Title matched");
 	}
 
+	// AddToCart
 	@Test(enabled = true, priority = 4)
 	public void addToCart() throws InterruptedException {
 		at.click();
@@ -93,14 +100,16 @@ public class OpenCartTestscripts extends BaseClass {
 
 	}
 
-	@Test(enabled = false, priority = 4)
+	// FileUpload
+	@Test(enabled = true, priority = 4)
 	public void uploadFile() {
 		fu.Productselection();
 		fu.Addtocartoptions();
 	}
 
+	// NavigateToHomePage
 	@Test(enabled = true, priority = 8)
-	public void TC_OpenCart_008() {
+	public void navigateHome() {
 
 		acc.clicksignin();
 		lp.clickLogin();
@@ -108,6 +117,7 @@ public class OpenCartTestscripts extends BaseClass {
 		acc.navigateToHomePage();
 	}
 
+	// OrderPlacementWithGuest
 	@Test(enabled = true, priority = 5)
 	public void orderPlacementWithGuest() {
 		op.findProduct();
@@ -134,8 +144,9 @@ public class OpenCartTestscripts extends BaseClass {
 		}
 	}
 
+	// Billing
 	@Test(enabled = true, priority = 7)
-	public void TC_OpenCart_007() {
+	public void billingDetails() {
 		op.findProduct();
 		op.addToCart();
 		op.viewCart();
@@ -152,7 +163,6 @@ public class OpenCartTestscripts extends BaseClass {
 		try {
 			Thread.sleep(10000);
 		} catch (InterruptedException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
 		String fileWithPath = "E:\\JavaPractice\\OpenCartRepo\\screenshot";
@@ -161,12 +171,12 @@ public class OpenCartTestscripts extends BaseClass {
 					.addScreenCaptureFromPath(fileWithPath + "RegisterCheckout_Confirm-Order" + ".png");
 			takeSnapShot(driver, fileWithPath, "RegisterCheckout_Confirm-Order");
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
 	}
 
+	// productAvailabitlyInCart
 	@Test(enabled = true, priority = 10)
 	public void productAvailabitlyInCart() {
 
@@ -185,6 +195,7 @@ public class OpenCartTestscripts extends BaseClass {
 
 	}
 
+	// removeProductFromCart
 	@Test(enabled = true, priority = 11)
 	public void removeProductFromCart() {
 
@@ -199,6 +210,7 @@ public class OpenCartTestscripts extends BaseClass {
 
 	}
 
+	// applyCouponCode
 	@Test(enabled = true, priority = 12)
 	public void applyCouponCode() {
 
@@ -222,6 +234,7 @@ public class OpenCartTestscripts extends BaseClass {
 
 	}
 
+	// emptyCouponCode
 	@Test(enabled = true, priority = 13)
 	public void emptyCouponCode() throws Exception {
 
@@ -232,6 +245,7 @@ public class OpenCartTestscripts extends BaseClass {
 
 	}
 
+	// whishList
 	@Test(enabled = true, priority = 15)
 	public void whishListTest() throws InterruptedException {
 
@@ -239,9 +253,11 @@ public class OpenCartTestscripts extends BaseClass {
 
 	}
 
+	// orderHistory
 	@Test(enabled = true, priority = 16)
 	public void orderHistory() throws Exception {
 
+		open.emptyCouponCode();
 		oh.orderHistoryView();
 	}
 
@@ -265,7 +281,7 @@ public class OpenCartTestscripts extends BaseClass {
 		} else if (result.getStatus() == ITestResult.SKIP) {
 			System.out.println(name + "---------Skiped");
 		}
-		
+		driver.close();
 
 	}
 

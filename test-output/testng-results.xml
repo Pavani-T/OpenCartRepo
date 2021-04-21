@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="9" total="14" passed="5">
+<testng-results skipped="0" failed="9" total="15" passed="6">
   <reporter-output>
     <line>
       <![CDATA[Telephone must be between 3 and 32 characters!]]>
     </line>
     <line>
-      <![CDATA[My Account]]>
+      <![CDATA[Your Store]]>
     </line>
     <line>
       <![CDATA[My Account]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="297577" started-at="2021-04-20T09:17:23Z" finished-at="2021-04-20T09:22:20Z">
+  <suite name="Suite" duration-ms="708695" started-at="2021-04-21T04:56:05Z" finished-at="2021-04-21T05:07:54Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="297577" started-at="2021-04-20T09:17:23Z" finished-at="2021-04-20T09:22:20Z">
+    <test name="Test" duration-ms="708695" started-at="2021-04-21T04:56:05Z" finished-at="2021-04-21T05:07:54Z">
       <class name="com.opencart.testscripts.OpenCartTestscripts">
-        <test-method status="PASS" signature="beforemethod(java.lang.String)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="beforemethod" is-config="true" duration-ms="37287" started-at="2021-04-20T14:47:23Z" finished-at="2021-04-20T14:48:00Z">
+        <test-method status="PASS" signature="beforemethod(java.lang.String)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="beforemethod" is-config="true" duration-ms="42780" started-at="2021-04-21T10:26:05Z" finished-at="2021-04-21T10:26:48Z">
           <params>
             <param index="0">
               <value>
@@ -27,7 +27,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method status="FAIL" signature="registerAccount()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="registerAccount" duration-ms="43872" started-at="2021-04-20T14:48:00Z" finished-at="2021-04-20T14:48:44Z">
+        <test-method status="FAIL" signature="registerAccount()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="registerAccount" duration-ms="29106" started-at="2021-04-21T10:26:48Z" finished-at="2021-04-21T10:27:17Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Continue']"}
@@ -38,8 +38,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'USER-PC', ip: '192.168.0.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56167}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
-Session ID: c5e97bad3266fada96c5440f07a553b1
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49586}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
+Session ID: cc85da0f59a2daa49808f3a18ecadd02
 *** Element info: {Using=xpath, value=//a[text()='Continue']}]]>
             </message>
             <full-stacktrace>
@@ -51,8 +51,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'USER-PC', ip: '192.168.0.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56167}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
-Session ID: c5e97bad3266fada96c5440f07a553b1
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49586}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
+Session ID: cc85da0f59a2daa49808f3a18ecadd02
 *** Element info: {Using=xpath, value=//a[text()='Continue']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -74,7 +74,7 @@ Session ID: c5e97bad3266fada96c5440f07a553b1
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy10.click(Unknown Source)
 	at com.opencart.pages.Accountcreation.createAccount(Accountcreation.java:79)
-	at com.opencart.testscripts.OpenCartTestscripts.registerAccount(OpenCartTestscripts.java:63)
+	at com.opencart.testscripts.OpenCartTestscripts.registerAccount(OpenCartTestscripts.java:64)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -105,7 +105,7 @@ Session ID: c5e97bad3266fada96c5440f07a553b1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerAccount -->
-        <test-method status="PASS" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="aftermethod" is-config="true" duration-ms="510" started-at="2021-04-20T14:48:44Z" finished-at="2021-04-20T14:48:44Z">
+        <test-method status="PASS" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="aftermethod" is-config="true" duration-ms="60332" started-at="2021-04-21T10:27:17Z" finished-at="2021-04-21T10:28:17Z">
           <params>
             <param index="0">
               <value>
@@ -116,14 +116,25 @@ Session ID: c5e97bad3266fada96c5440f07a553b1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="registerAccountFailure()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="registerAccountFailure" duration-ms="6090" started-at="2021-04-20T14:48:44Z" finished-at="2021-04-20T14:48:50Z">
+        <test-method status="PASS" signature="beforemethod(java.lang.String)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="beforemethod" is-config="true" duration-ms="22674" started-at="2021-04-21T10:28:17Z" finished-at="2021-04-21T10:28:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="PASS" signature="registerAccountFailure()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="registerAccountFailure" duration-ms="4531" started-at="2021-04-21T10:28:40Z" finished-at="2021-04-21T10:28:44Z">
           <reporter-output>
             <line>
               <![CDATA[Telephone must be between 3 and 32 characters!]]>
             </line>
           </reporter-output>
         </test-method> <!-- registerAccountFailure -->
-        <test-method status="PASS" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="aftermethod" is-config="true" duration-ms="1" started-at="2021-04-20T14:48:50Z" finished-at="2021-04-20T14:48:50Z">
+        <test-method status="PASS" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="aftermethod" is-config="true" duration-ms="2327" started-at="2021-04-21T10:28:44Z" finished-at="2021-04-21T10:28:47Z">
           <params>
             <param index="0">
               <value>
@@ -134,11 +145,22 @@ Session ID: c5e97bad3266fada96c5440f07a553b1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="login" duration-ms="4847" started-at="2021-04-20T14:48:50Z" finished-at="2021-04-20T14:48:55Z">
+        <test-method status="PASS" signature="beforemethod(java.lang.String)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="beforemethod" is-config="true" duration-ms="21396" started-at="2021-04-21T10:28:47Z" finished-at="2021-04-21T10:29:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="login" duration-ms="4741" started-at="2021-04-21T10:29:08Z" finished-at="2021-04-21T10:29:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="aftermethod" is-config="true" duration-ms="1" started-at="2021-04-20T14:48:55Z" finished-at="2021-04-20T14:48:55Z">
+        <test-method status="PASS" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="aftermethod" is-config="true" duration-ms="2325" started-at="2021-04-21T10:29:13Z" finished-at="2021-04-21T10:29:15Z">
           <params>
             <param index="0">
               <value>
@@ -149,32 +171,92 @@ Session ID: c5e97bad3266fada96c5440f07a553b1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="verifyTitle()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="verifyTitle" duration-ms="56" started-at="2021-04-20T14:48:55Z" finished-at="2021-04-20T14:48:55Z">
+        <test-method status="PASS" signature="beforemethod(java.lang.String)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="beforemethod" is-config="true" duration-ms="22353" started-at="2021-04-21T10:29:15Z" finished-at="2021-04-21T10:29:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="FAIL" signature="verifyTitle()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="verifyTitle" duration-ms="20" started-at="2021-04-21T10:29:38Z" finished-at="2021-04-21T10:29:38Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Title matched expected [My Account] but found [Your Store]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Title matched expected [My Account] but found [Your Store]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at com.opencart.testscripts.OpenCartTestscripts.verifyTitle(OpenCartTestscripts.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[My Account]]>
+              <![CDATA[Your Store]]>
             </line>
             <line>
               <![CDATA[My Account]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyTitle -->
-        <test-method status="PASS" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="aftermethod" is-config="true" duration-ms="1" started-at="2021-04-20T14:48:55Z" finished-at="2021-04-20T14:48:55Z">
+        <test-method status="PASS" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="aftermethod" is-config="true" duration-ms="23345" started-at="2021-04-21T10:29:38Z" finished-at="2021-04-21T10:30:01Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyTitle status=SUCCESS method=OpenCartTestscripts.verifyTitle()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6] output=My Account]]]>
+                <![CDATA[[TestResult name=verifyTitle status=FAILURE method=OpenCartTestscripts.verifyTitle()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6] output=Your Store]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="addToCart()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="addToCart" duration-ms="17809" started-at="2021-04-20T14:48:55Z" finished-at="2021-04-20T14:49:13Z">
+        <test-method status="PASS" signature="beforemethod(java.lang.String)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="beforemethod" is-config="true" duration-ms="21981" started-at="2021-04-21T10:30:01Z" finished-at="2021-04-21T10:30:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="PASS" signature="addToCart()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="addToCart" duration-ms="7722" started-at="2021-04-21T10:30:23Z" finished-at="2021-04-21T10:30:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToCart -->
-        <test-method status="PASS" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="aftermethod" is-config="true" duration-ms="1" started-at="2021-04-20T14:49:13Z" finished-at="2021-04-20T14:49:13Z">
+        <test-method status="PASS" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="aftermethod" is-config="true" duration-ms="2401" started-at="2021-04-21T10:30:31Z" finished-at="2021-04-21T10:30:33Z">
           <params>
             <param index="0">
               <value>
@@ -185,29 +267,64 @@ Session ID: c5e97bad3266fada96c5440f07a553b1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="FAIL" signature="orderPlacementWithGuest()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="orderPlacementWithGuest" duration-ms="23739" started-at="2021-04-20T14:49:13Z" finished-at="2021-04-20T14:49:37Z">
-          <exception class="org.openqa.selenium.ElementNotVisibleException">
+        <test-method status="PASS" signature="beforemethod(java.lang.String)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="beforemethod" is-config="true" duration-ms="21229" started-at="2021-04-21T10:30:33Z" finished-at="2021-04-21T10:30:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="PASS" signature="uploadFile()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="uploadFile" duration-ms="26848" started-at="2021-04-21T10:30:54Z" finished-at="2021-04-21T10:31:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uploadFile -->
+        <test-method status="PASS" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="aftermethod" is-config="true" duration-ms="2152" started-at="2021-04-21T10:31:21Z" finished-at="2021-04-21T10:31:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=uploadFile status=SUCCESS method=OpenCartTestscripts.uploadFile()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="beforemethod(java.lang.String)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="beforemethod" is-config="true" duration-ms="21628" started-at="2021-04-21T10:31:23Z" finished-at="2021-04-21T10:31:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="FAIL" signature="orderPlacementWithGuest()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="orderPlacementWithGuest" duration-ms="1865" started-at="2021-04-21T10:31:45Z" finished-at="2021-04-21T10:31:47Z">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=89.0.4389.128)
+              <![CDATA[invalid session id
   (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'USER-PC', ip: '192.168.0.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56167}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
-Session ID: c5e97bad3266fada96c5440f07a553b1]]>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49856}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
+Session ID: 7b752f11c8c1481995c97c80d430ded1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotVisibleException: element not interactable
-  (Session info: chrome=89.0.4389.128)
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
   (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'USER-PC', ip: '192.168.0.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56167}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
-Session ID: c5e97bad3266fada96c5440f07a553b1
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49856}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
+Session ID: 7b752f11c8c1481995c97c80d430ded1
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -220,15 +337,10 @@ Session ID: c5e97bad3266fada96c5440f07a553b1
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy10.click(Unknown Source)
-	at com.opencart.pages.OrderPlacement.findProduct(OrderPlacement.java:106)
-	at com.opencart.testscripts.OpenCartTestscripts.orderPlacementWithGuest(OpenCartTestscripts.java:113)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at com.opencart.utilities.ScrollPage.scrollPage(ScrollPage.java:13)
+	at com.opencart.pages.OrderPlacement.findProduct(OrderPlacement.java:104)
+	at com.opencart.testscripts.OpenCartTestscripts.orderPlacementWithGuest(OpenCartTestscripts.java:121)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -255,11 +367,11 @@ Session ID: c5e97bad3266fada96c5440f07a553b1
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- orderPlacementWithGuest -->
-        <test-method status="PASS" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="aftermethod" is-config="true" duration-ms="537" started-at="2021-04-20T14:49:37Z" finished-at="2021-04-20T14:49:38Z">
+        <test-method status="PASS" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="aftermethod" is-config="true" duration-ms="2883" started-at="2021-04-21T10:31:47Z" finished-at="2021-04-21T10:31:50Z">
           <params>
             <param index="0">
               <value>
@@ -270,29 +382,38 @@ Session ID: c5e97bad3266fada96c5440f07a553b1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="FAIL" signature="TC_OpenCart_007()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="TC_OpenCart_007" duration-ms="22365" started-at="2021-04-20T14:49:38Z" finished-at="2021-04-20T14:50:00Z">
-          <exception class="org.openqa.selenium.ElementNotVisibleException">
+        <test-method status="PASS" signature="beforemethod(java.lang.String)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="beforemethod" is-config="true" duration-ms="21762" started-at="2021-04-21T10:31:50Z" finished-at="2021-04-21T10:32:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="FAIL" signature="billingDetails()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="billingDetails" duration-ms="1878" started-at="2021-04-21T10:32:11Z" finished-at="2021-04-21T10:32:13Z">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=89.0.4389.128)
+              <![CDATA[invalid session id
   (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'USER-PC', ip: '192.168.0.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56167}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
-Session ID: c5e97bad3266fada96c5440f07a553b1]]>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49856}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
+Session ID: 7b752f11c8c1481995c97c80d430ded1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotVisibleException: element not interactable
-  (Session info: chrome=89.0.4389.128)
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
   (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'USER-PC', ip: '192.168.0.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56167}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
-Session ID: c5e97bad3266fada96c5440f07a553b1
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49856}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
+Session ID: 7b752f11c8c1481995c97c80d430ded1
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -305,15 +426,10 @@ Session ID: c5e97bad3266fada96c5440f07a553b1
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy10.click(Unknown Source)
-	at com.opencart.pages.OrderPlacement.findProduct(OrderPlacement.java:106)
-	at com.opencart.testscripts.OpenCartTestscripts.TC_OpenCart_007(OpenCartTestscripts.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at com.opencart.utilities.ScrollPage.scrollPage(ScrollPage.java:13)
+	at com.opencart.pages.OrderPlacement.findProduct(OrderPlacement.java:104)
+	at com.opencart.testscripts.OpenCartTestscripts.billingDetails(OpenCartTestscripts.java:148)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -340,198 +456,88 @@ Session ID: c5e97bad3266fada96c5440f07a553b1
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_OpenCart_007 -->
-        <test-method status="PASS" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="aftermethod" is-config="true" duration-ms="371" started-at="2021-04-20T14:50:00Z" finished-at="2021-04-20T14:50:00Z">
+        </test-method> <!-- billingDetails -->
+        <test-method status="PASS" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="aftermethod" is-config="true" duration-ms="907" started-at="2021-04-21T10:32:13Z" finished-at="2021-04-21T10:32:14Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_OpenCart_007 status=FAILURE method=OpenCartTestscripts.TC_OpenCart_007()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6] output={null}]]]>
+                <![CDATA[[TestResult name=billingDetails status=FAILURE method=OpenCartTestscripts.billingDetails()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="FAIL" signature="TC_OpenCart_008()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="TC_OpenCart_008" duration-ms="20195" started-at="2021-04-20T14:50:00Z" finished-at="2021-04-20T14:50:20Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Register']"}
-  (Session info: chrome=89.0.4389.128)
-  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'USER-PC', ip: '192.168.0.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56167}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
-Session ID: c5e97bad3266fada96c5440f07a553b1
-*** Element info: {Using=xpath, value=//a[text()='Register']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Register']"}
-  (Session info: chrome=89.0.4389.128)
-  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'USER-PC', ip: '192.168.0.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56167}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
-Session ID: c5e97bad3266fada96c5440f07a553b1
-*** Element info: {Using=xpath, value=//a[text()='Register']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy10.click(Unknown Source)
-	at com.opencart.pages.Accountcreation.clicksignin(Accountcreation.java:62)
-	at com.opencart.testscripts.OpenCartTestscripts.TC_OpenCart_008(OpenCartTestscripts.java:105)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_OpenCart_008 -->
-        <test-method status="PASS" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="aftermethod" is-config="true" duration-ms="404" started-at="2021-04-20T14:50:20Z" finished-at="2021-04-20T14:50:21Z">
+        <test-method status="PASS" signature="beforemethod(java.lang.String)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="beforemethod" is-config="true" duration-ms="21189" started-at="2021-04-21T10:32:14Z" finished-at="2021-04-21T10:32:35Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_OpenCart_008 status=FAILURE method=OpenCartTestscripts.TC_OpenCart_008()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6] output={null}]]]>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="PASS" signature="navigateHome()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="navigateHome" duration-ms="11820" started-at="2021-04-21T10:32:35Z" finished-at="2021-04-21T10:32:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateHome -->
+        <test-method status="PASS" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="aftermethod" is-config="true" duration-ms="2405" started-at="2021-04-21T10:32:47Z" finished-at="2021-04-21T10:32:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=navigateHome status=SUCCESS method=OpenCartTestscripts.navigateHome()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="FAIL" signature="productAvailabitlyInCart()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="productAvailabitlyInCart" duration-ms="427" started-at="2021-04-20T14:50:21Z" finished-at="2021-04-20T14:50:21Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: Element <span class="input-group-btn">...</span> is not clickable at point (909, 84). Other element would receive the click: <a href="https://demo.opencart.com/index.php?route=account/order">...</a>
-  (Session info: chrome=89.0.4389.128)
-  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'USER-PC', ip: '192.168.0.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56167}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
-Session ID: c5e97bad3266fada96c5440f07a553b1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <span class="input-group-btn">...</span> is not clickable at point (909, 84). Other element would receive the click: <a href="https://demo.opencart.com/index.php?route=account/order">...</a>
-  (Session info: chrome=89.0.4389.128)
-  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'USER-PC', ip: '192.168.0.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56167}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
-Session ID: c5e97bad3266fada96c5440f07a553b1
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy10.click(Unknown Source)
-	at com.opencart.testscripts.OpenCartTestscripts.productAvailabitlyInCart(OpenCartTestscripts.java:175)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="beforemethod(java.lang.String)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="beforemethod" is-config="true" duration-ms="22943" started-at="2021-04-21T10:32:50Z" finished-at="2021-04-21T10:33:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="PASS" signature="productAvailabitlyInCart()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="productAvailabitlyInCart" duration-ms="10406" started-at="2021-04-21T10:33:13Z" finished-at="2021-04-21T10:33:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productAvailabitlyInCart -->
-        <test-method status="PASS" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="aftermethod" is-config="true" duration-ms="366" started-at="2021-04-20T14:50:21Z" finished-at="2021-04-20T14:50:22Z">
+        <test-method status="PASS" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="aftermethod" is-config="true" duration-ms="2330" started-at="2021-04-21T10:33:23Z" finished-at="2021-04-21T10:33:25Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=productAvailabitlyInCart status=FAILURE method=OpenCartTestscripts.productAvailabitlyInCart()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6] output={null}]]]>
+                <![CDATA[[TestResult name=productAvailabitlyInCart status=SUCCESS method=OpenCartTestscripts.productAvailabitlyInCart()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="FAIL" signature="removeProductFromCart()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="removeProductFromCart" duration-ms="30132" started-at="2021-04-20T14:50:22Z" finished-at="2021-04-20T14:50:52Z">
+        <test-method status="PASS" signature="beforemethod(java.lang.String)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="beforemethod" is-config="true" duration-ms="21658" started-at="2021-04-21T10:33:25Z" finished-at="2021-04-21T10:33:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="FAIL" signature="removeProductFromCart()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="removeProductFromCart" duration-ms="30603" started-at="2021-04-21T10:33:47Z" finished-at="2021-04-21T10:34:18Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Continue']"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='input-group-btn']/button[@data-original-title='Remove']"}
   (Session info: chrome=89.0.4389.128)
   (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -539,12 +545,12 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'USER-PC', ip: '192.168.0.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56167}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
-Session ID: c5e97bad3266fada96c5440f07a553b1
-*** Element info: {Using=xpath, value=//a[text()='Continue']}]]>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50078}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
+Session ID: 79e5cb89fc1a93f698a5f88738e95582
+*** Element info: {Using=xpath, value=//span[@class='input-group-btn']/button[@data-original-title='Remove']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Continue']"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='input-group-btn']/button[@data-original-title='Remove']"}
   (Session info: chrome=89.0.4389.128)
   (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -552,9 +558,9 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'USER-PC', ip: '192.168.0.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56167}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
-Session ID: c5e97bad3266fada96c5440f07a553b1
-*** Element info: {Using=xpath, value=//a[text()='Continue']}
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50078}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
+Session ID: 79e5cb89fc1a93f698a5f88738e95582
+*** Element info: {Using=xpath, value=//span[@class='input-group-btn']/button[@data-original-title='Remove']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -574,7 +580,7 @@ Session ID: c5e97bad3266fada96c5440f07a553b1
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy10.click(Unknown Source)
-	at com.opencart.testscripts.OpenCartTestscripts.removeProductFromCart(OpenCartTestscripts.java:198)
+	at com.opencart.testscripts.OpenCartTestscripts.removeProductFromCart(OpenCartTestscripts.java:206)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -605,7 +611,7 @@ Session ID: c5e97bad3266fada96c5440f07a553b1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeProductFromCart -->
-        <test-method status="PASS" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="aftermethod" is-config="true" duration-ms="462" started-at="2021-04-20T14:50:52Z" finished-at="2021-04-20T14:50:52Z">
+        <test-method status="PASS" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="aftermethod" is-config="true" duration-ms="2495" started-at="2021-04-21T10:34:18Z" finished-at="2021-04-21T10:34:20Z">
           <params>
             <param index="0">
               <value>
@@ -616,7 +622,18 @@ Session ID: c5e97bad3266fada96c5440f07a553b1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="FAIL" signature="applyCouponCode()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="applyCouponCode" duration-ms="28690" started-at="2021-04-20T14:50:52Z" finished-at="2021-04-20T14:51:21Z">
+        <test-method status="PASS" signature="beforemethod(java.lang.String)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="beforemethod" is-config="true" duration-ms="21777" started-at="2021-04-21T10:34:20Z" finished-at="2021-04-21T10:34:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="FAIL" signature="applyCouponCode()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="applyCouponCode" duration-ms="32461" started-at="2021-04-21T10:34:42Z" finished-at="2021-04-21T10:35:14Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Use Coupon Code']"}
@@ -627,8 +644,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'USER-PC', ip: '192.168.0.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56167}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
-Session ID: c5e97bad3266fada96c5440f07a553b1
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50128}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
+Session ID: b8c53a4fc1571eae21f92ae9c815534a
 *** Element info: {Using=xpath, value=//a[text()='Use Coupon Code']}]]>
             </message>
             <full-stacktrace>
@@ -640,8 +657,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'USER-PC', ip: '192.168.0.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56167}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
-Session ID: c5e97bad3266fada96c5440f07a553b1
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50128}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
+Session ID: b8c53a4fc1571eae21f92ae9c815534a
 *** Element info: {Using=xpath, value=//a[text()='Use Coupon Code']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -662,7 +679,7 @@ Session ID: c5e97bad3266fada96c5440f07a553b1
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy10.click(Unknown Source)
-	at com.opencart.testscripts.OpenCartTestscripts.applyCouponCode(OpenCartTestscripts.java:217)
+	at com.opencart.testscripts.OpenCartTestscripts.applyCouponCode(OpenCartTestscripts.java:227)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -693,7 +710,7 @@ Session ID: c5e97bad3266fada96c5440f07a553b1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- applyCouponCode -->
-        <test-method status="PASS" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="aftermethod" is-config="true" duration-ms="414" started-at="2021-04-20T14:51:21Z" finished-at="2021-04-20T14:51:21Z">
+        <test-method status="PASS" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="aftermethod" is-config="true" duration-ms="2703" started-at="2021-04-21T10:35:14Z" finished-at="2021-04-21T10:35:17Z">
           <params>
             <param index="0">
               <value>
@@ -704,10 +721,21 @@ Session ID: c5e97bad3266fada96c5440f07a553b1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="FAIL" signature="emptyCouponCode()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="emptyCouponCode" duration-ms="20198" started-at="2021-04-20T14:51:21Z" finished-at="2021-04-20T14:51:42Z">
+        <test-method status="PASS" signature="beforemethod(java.lang.String)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="beforemethod" is-config="true" duration-ms="25391" started-at="2021-04-21T10:35:17Z" finished-at="2021-04-21T10:35:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="FAIL" signature="emptyCouponCode()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="emptyCouponCode" duration-ms="26301" started-at="2021-04-21T10:35:42Z" finished-at="2021-04-21T10:36:09Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//a[contains(.,'Login')])[1]"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(.,'Use Coupon Code')]"}
   (Session info: chrome=89.0.4389.128)
   (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -715,12 +743,12 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'USER-PC', ip: '192.168.0.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56167}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
-Session ID: c5e97bad3266fada96c5440f07a553b1
-*** Element info: {Using=xpath, value=(//a[contains(.,'Login')])[1]}]]>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50193}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
+Session ID: 6e4cc8a7bef4d9015777c90a406b858b
+*** Element info: {Using=xpath, value=//a[contains(.,'Use Coupon Code')]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//a[contains(.,'Login')])[1]"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(.,'Use Coupon Code')]"}
   (Session info: chrome=89.0.4389.128)
   (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -728,9 +756,9 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'USER-PC', ip: '192.168.0.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56167}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
-Session ID: c5e97bad3266fada96c5440f07a553b1
-*** Element info: {Using=xpath, value=(//a[contains(.,'Login')])[1]}
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50193}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
+Session ID: 6e4cc8a7bef4d9015777c90a406b858b
+*** Element info: {Using=xpath, value=//a[contains(.,'Use Coupon Code')]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -750,8 +778,8 @@ Session ID: c5e97bad3266fada96c5440f07a553b1
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy10.click(Unknown Source)
-	at com.opencart.pages.LoginPage.clickLogin(LoginPage.java:30)
-	at com.opencart.testscripts.OpenCartTestscripts.emptyCouponCode(OpenCartTestscripts.java:228)
+	at com.opencart.pages.CouponCode.Empty_Couponcode(CouponCode.java:101)
+	at com.opencart.testscripts.OpenCartTestscripts.emptyCouponCode(OpenCartTestscripts.java:240)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -782,7 +810,7 @@ Session ID: c5e97bad3266fada96c5440f07a553b1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyCouponCode -->
-        <test-method status="PASS" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="aftermethod" is-config="true" duration-ms="390" started-at="2021-04-20T14:51:42Z" finished-at="2021-04-20T14:51:42Z">
+        <test-method status="PASS" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="aftermethod" is-config="true" duration-ms="2696" started-at="2021-04-21T10:36:09Z" finished-at="2021-04-21T10:36:11Z">
           <params>
             <param index="0">
               <value>
@@ -793,29 +821,44 @@ Session ID: c5e97bad3266fada96c5440f07a553b1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="FAIL" signature="whishListTest()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="whishListTest" duration-ms="30856" started-at="2021-04-20T14:51:42Z" finished-at="2021-04-20T14:52:13Z">
-          <exception class="org.openqa.selenium.ElementNotVisibleException">
+        <test-method status="PASS" signature="beforemethod(java.lang.String)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="beforemethod" is-config="true" duration-ms="23094" started-at="2021-04-21T10:36:11Z" finished-at="2021-04-21T10:36:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="FAIL" signature="whishListTest()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="whishListTest" duration-ms="31230" started-at="2021-04-21T10:36:35Z" finished-at="2021-04-21T10:37:06Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element not interactable
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//i[contains(@class,'fa fa-shopping-cart')])[3]"}
   (Session info: chrome=89.0.4389.128)
   (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'USER-PC', ip: '192.168.0.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56167}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
-Session ID: c5e97bad3266fada96c5440f07a553b1]]>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50237}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
+Session ID: 0bad888a719461d4bd9942c875c101a7
+*** Element info: {Using=xpath, value=(//i[contains(@class,'fa fa-shopping-cart')])[3]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotVisibleException: element not interactable
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//i[contains(@class,'fa fa-shopping-cart')])[3]"}
   (Session info: chrome=89.0.4389.128)
   (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'USER-PC', ip: '192.168.0.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56167}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
-Session ID: c5e97bad3266fada96c5440f07a553b1
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50237}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
+Session ID: 0bad888a719461d4bd9942c875c101a7
+*** Element info: {Using=xpath, value=(//i[contains(@class,'fa fa-shopping-cart')])[3]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -828,15 +871,15 @@ Session ID: c5e97bad3266fada96c5440f07a553b1
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy10.click(Unknown Source)
 	at com.opencart.pages.WishList.wishlist_method(WishList.java:60)
-	at com.opencart.testscripts.OpenCartTestscripts.whishListTest(OpenCartTestscripts.java:238)
+	at com.opencart.testscripts.OpenCartTestscripts.whishListTest(OpenCartTestscripts.java:250)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -863,11 +906,11 @@ Session ID: c5e97bad3266fada96c5440f07a553b1
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- whishListTest -->
-        <test-method status="PASS" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="aftermethod" is-config="true" duration-ms="423" started-at="2021-04-20T14:52:13Z" finished-at="2021-04-20T14:52:13Z">
+        <test-method status="PASS" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="aftermethod" is-config="true" duration-ms="2478" started-at="2021-04-21T10:37:06Z" finished-at="2021-04-21T10:37:08Z">
           <params>
             <param index="0">
               <value>
@@ -878,15 +921,100 @@ Session ID: c5e97bad3266fada96c5440f07a553b1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="orderHistory()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="orderHistory" duration-ms="7014" started-at="2021-04-20T14:52:13Z" finished-at="2021-04-20T14:52:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- orderHistory -->
-        <test-method status="PASS" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="aftermethod" is-config="true" duration-ms="0" started-at="2021-04-20T14:52:20Z" finished-at="2021-04-20T14:52:20Z">
+        <test-method status="PASS" signature="beforemethod(java.lang.String)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="beforemethod" is-config="true" duration-ms="22790" started-at="2021-04-21T10:37:08Z" finished-at="2021-04-21T10:37:31Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=orderHistory status=SUCCESS method=OpenCartTestscripts.orderHistory()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6] output={null}]]]>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="FAIL" signature="orderHistory()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="orderHistory" duration-ms="20051" started-at="2021-04-21T10:37:31Z" finished-at="2021-04-21T10:37:51Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//a[text()='Order History'])[3]"}
+  (Session info: chrome=89.0.4389.128)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'USER-PC', ip: '192.168.0.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50289}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
+Session ID: 9b328ef83aa84a35d038a1c5129aaa35
+*** Element info: {Using=xpath, value=(//a[text()='Order History'])[3]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//a[text()='Order History'])[3]"}
+  (Session info: chrome=89.0.4389.128)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'USER-PC', ip: '192.168.0.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50289}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
+Session ID: 9b328ef83aa84a35d038a1c5129aaa35
+*** Element info: {Using=xpath, value=(//a[text()='Order History'])[3]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.opencart.pages.OrderHistory.orderHistoryView(OrderHistory.java:24)
+	at com.opencart.testscripts.OpenCartTestscripts.orderHistory(OpenCartTestscripts.java:258)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderHistory -->
+        <test-method status="PASS" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6]" name="aftermethod" is-config="true" duration-ms="2557" started-at="2021-04-21T10:37:51Z" finished-at="2021-04-21T10:37:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=orderHistory status=FAILURE method=OpenCartTestscripts.orderHistory()[pri:0, instance:com.opencart.testscripts.OpenCartTestscripts@ae45eb6] output={null}]]]>
               </value>
             </param>
           </params>
