@@ -20,6 +20,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import com.opencart.constants.BaseClass;
+import com.opencart.utilities.Waits;
 
 
 public class WishList extends BaseClass{
@@ -52,13 +53,12 @@ public class WishList extends BaseClass{
 	 
 	 Select select = new Select(sortby_dropdown);
 	 select.selectByIndex(4);
-	 Thread.sleep(3000);
-	 
+	 Waits.waitperiod();
 	 wishlist_button.click();
-	 Thread.sleep(2000);
+	 Waits.waitperiod();
 	 wishlist_icon.click();
 	 addtocart.click();
-	 Thread.sleep(2000);
+	 Waits.waitperiod();
 	 File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 	 try {
 	 FileUtils.copyFile(screenshot, new File("E:\\JavaPractice\\OpenCartRepo\\screenshot" + FileName));

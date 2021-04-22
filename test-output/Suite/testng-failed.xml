@@ -9,15 +9,13 @@
     <classes>
       <class name="com.opencart.testscripts.OpenCartTestscripts">
         <methods>
-          <include name="whishListTest"/>
           <include name="billingDetails"/>
           <include name="removeProductFromCart"/>
+          <include name="navigateHome"/>
           <include name="orderPlacementWithGuest"/>
           <include name="beforemethod"/>
-          <include name="verifyTitle"/>
           <include name="orderHistory"/>
           <include name="aftermethod"/>
-          <include name="registerAccount"/>
           <include name="emptyCouponCode"/>
           <include name="applyCouponCode"/>
         </methods>

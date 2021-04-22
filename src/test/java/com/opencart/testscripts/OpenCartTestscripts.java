@@ -23,6 +23,7 @@ import com.opencart.pages.LoginPage;
 import com.opencart.pages.OrderHistory;
 import com.opencart.pages.OrderPlacement;
 import com.opencart.pages.WishList;
+import com.opencart.utilities.ScrollPage;
 import com.opencart.utilities.Waits;
 
 public class OpenCartTestscripts extends BaseClass {
@@ -83,6 +84,7 @@ public class OpenCartTestscripts extends BaseClass {
 	// VerifyTitle
 	@Test(enabled = true, priority = 3)
 	public void verifyTitle() {
+		lp.clickLogin();
 		String actual = driver.getTitle();
 		Reporter.log(actual);
 		String expected = prop.getProperty("title");
@@ -187,6 +189,7 @@ public class OpenCartTestscripts extends BaseClass {
 		ap.qty.clear();
 		ap.qty.sendKeys(prop.getProperty("qty"));
 		ap.addToCart.click();
+		Waits.waitperiod();
 		ap.cartItems.click();
 		ap.checkout.click();
 		String actValue = ap.alertMsg.getText().trim();
@@ -201,9 +204,11 @@ public class OpenCartTestscripts extends BaseClass {
 
 		Actions act = new Actions(driver);
 		act.moveToElement(ap.lapAndNoteProducts).click(ap.showAllLapAndNoteProducts).build().perform();
+		ScrollPage.scrollPage();
 		ap.product(prop.getProperty("lapTopProduct")).click();
 		ap.addToCart.click();
 		ap.cartItems.click();
+		Waits.waitperiod();
 		ap.viewCart.click();
 		ap.removeProduct.click();
 		ap.continueBtn.click();
@@ -214,21 +219,25 @@ public class OpenCartTestscripts extends BaseClass {
 	@Test(enabled = true, priority = 12)
 	public void applyCouponCode() {
 
-		// ActionsClass.actionCode(ap.lapAndNoteProducts);
-
+		Waits.waitperiod();
 		Actions act = new Actions(driver);
 		act.moveToElement(ap.lapAndNoteProducts).click(ap.showAllLapAndNoteProducts).build().perform();
+		Waits.waitperiod();
 		ap.product(prop.getProperty("lapTopProduct")).click();
+		Waits.waitperiod();
 		ap.deliveryDate.clear();
 		ap.deliveryDate.sendKeys(prop.getProperty("deliveryDate"));
 		ap.qty.clear();
 		ap.qty.sendKeys(prop.getProperty("qty"));
 		ap.addToCart.click();
+		Waits.waitperiod();
 		ap.cartItems.click();
 		ap.viewCart.click();
+		Waits.waitperiod();
 		ap.useCouponCode.click();
 		ap.couponCode.clear();
 		ap.couponCode.sendKeys(prop.getProperty("couponCode"));
+		Waits.waitperiod();
 		ap.applyCouponCode.click();
 		ap.removeProduct.click();
 
@@ -237,10 +246,23 @@ public class OpenCartTestscripts extends BaseClass {
 	// emptyCouponCode
 	@Test(enabled = true, priority = 13)
 	public void emptyCouponCode() throws Exception {
-
 		lp.clickLogin();
+		// start
+		Actions act = new Actions(driver);
+		act.moveToElement(ap.lapAndNoteProducts).click(ap.showAllLapAndNoteProducts).build().perform();
+		ap.product(prop.getProperty("lapTopProduct")).click();
+		ap.deliveryDate.clear();
+		ap.deliveryDate.sendKeys(prop.getProperty("deliveryDate"));
+		ap.qty.clear();
+		ap.qty.sendKeys(prop.getProperty("qty"));
+		ap.addToCart.click();
+		// end start to lines are added to add proct in cart
+
+		Waits.waitperiod();
 		cc.Empty_Couponcode();
+		Waits.waitperiod();
 		cc.Estimate_Shipping();
+		Waits.waitperiod();
 		cc.BillingDetails();
 
 	}
@@ -248,7 +270,7 @@ public class OpenCartTestscripts extends BaseClass {
 	// whishList
 	@Test(enabled = true, priority = 15)
 	public void whishListTest() throws InterruptedException {
-
+		Waits.waitperiod();
 		wl.wishlist_method();
 
 	}
@@ -256,8 +278,7 @@ public class OpenCartTestscripts extends BaseClass {
 	// orderHistory
 	@Test(enabled = true, priority = 16)
 	public void orderHistory() throws Exception {
-
-		open.emptyCouponCode();
+		//open.emptyCouponCode();
 		oh.orderHistoryView();
 	}
 

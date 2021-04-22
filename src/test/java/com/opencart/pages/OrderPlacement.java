@@ -101,7 +101,7 @@ public class OrderPlacement extends BaseClass {
 		pointer.clickAndHold(laptops).build().perform();
 		showLaptops.click();
 		Waits.waitperiod();
-		ScrollPage.scrollPage();
+		//ScrollPage.scrollPage();
 		// Waits.waitperiod();
 		hpProduct.click();
 		Waits.waitperiod();
@@ -199,6 +199,7 @@ public class OrderPlacement extends BaseClass {
 	}
 
 	public void confirmOrder() {
+		 Waits.waitperiod();
 		btnconfirmOrder.click();
 	}
 
