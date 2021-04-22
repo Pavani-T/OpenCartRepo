@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.opencart.testscripts.OpenCartTestscripts">
         <methods>
-          <include name="TC_OpenCart_007"/>
+          <include name="whishListTest"/>
+          <include name="removeProductFromCart"/>
+          <include name="editLastName"/>
           <include name="orderPlacementWithGuest"/>
+          <include name="beforemethod"/>
+          <include name="login"/>
+          <include name="orderHistory"/>
+          <include name="aftermethod"/>
+          <include name="emptyCouponCode"/>
+          <include name="applyCouponCode"/>
+          <include name="registerAccountFailure"/>
+          <include name="verifyTitle"/>
+          <include name="orderPlacementWithRegister"/>
+          <include name="addToCart"/>
+          <include name="productAvailabitlyInCart"/>
+          <include name="registerAccount"/>
         </methods>
       </class> <!-- com.opencart.testscripts.OpenCartTestscripts -->
     </classes>

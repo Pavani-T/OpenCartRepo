@@ -4,13 +4,11 @@ package com.opencart.listeners;
 
 import java.io.IOException;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import com.aventstack.extentreports.Status;
-import com.relevantcodes.extentreports.LogStatus;
 
 
 
@@ -39,7 +37,7 @@ public class TestListener implements ITestListener{
 
 	public void onTestFailure(ITestResult result) {
 		System.out.println("*** Test execution " + result.getMethod().getMethodName() + " failed...");
-		String fileWithPath = "E:\\JavaPractice\\OpenCartRepo\\screenshot";
+		String fileWithPath = "E:\\Shweta\\OpenCartRepo\\screenshot\\";
 		try {
 			ExtentTestManager.getTest().addScreenCaptureFromPath(fileWithPath + result.getMethod().getMethodName()+".png");
 		} catch (IOException e) {

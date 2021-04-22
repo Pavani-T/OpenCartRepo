@@ -34,8 +34,7 @@ public class BaseClass {
 				prop = new Properties();
 				FileInputStream file;
 				try {
-					file = new FileInputStream("E:\\JavaPractice\\OpenCartRepo\\src\\main\\java\\com\\opencart\\"
-							+ "config\\config.properties");
+					file = new FileInputStream("E:\\Shweta\\OpenCartRepo\\src\\main\\java\\com\\opencart\\config\\config.properties");
 					prop.load(file);
 				} catch (FileNotFoundException e) {
 					e.printStackTrace();
@@ -46,11 +45,11 @@ public class BaseClass {
 		
 		public static WebDriver gotoChromeDriver() {
 			System.out.println("Script running by google chrome browser");
-			System.setProperty("webdriver.chrome.driver", "E:\\JavaPractice\\OpenCartRepo\\Drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "E:\\Shweta\\OpenCartRepo\\Drivers\\chromedriver.exe");
 			WebDriver driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
-			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+//			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 //			driver.navigate().to(appURL);
 			driver.get(prop.getProperty("url"));
 			return driver;
@@ -62,7 +61,7 @@ public class BaseClass {
 			WebDriver driver = new org.openqa.selenium.firefox.FirefoxDriver();
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
-			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+//			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			driver.get(prop.getProperty("url"));
 			return driver;
 		}

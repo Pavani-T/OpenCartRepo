@@ -9,7 +9,7 @@ import com.opencart.constants.BaseClass;
 public class OrderHistory extends BaseClass{
 	
 	
-	@FindBy(xpath = "(//a[text()='Order History'])[3]")
+	@FindBy(xpath = "//a[text()='Order History']")
 	WebElement orderHistory;
 	@FindBy(xpath = "//i[@class='fa fa-eye']")
 	WebElement view;

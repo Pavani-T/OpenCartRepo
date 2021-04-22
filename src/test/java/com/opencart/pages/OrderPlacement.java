@@ -101,8 +101,7 @@ public class OrderPlacement extends BaseClass {
 		pointer.clickAndHold(laptops).build().perform();
 		showLaptops.click();
 		Waits.waitperiod();
-		ScrollPage.scrollPage();
-		// Waits.waitperiod();
+		ScrollPage.scrollPagedown();
 		hpProduct.click();
 		Waits.waitperiod();
 		// ScrollPage.scrollPagedown();
@@ -147,9 +146,15 @@ public class OrderPlacement extends BaseClass {
 		address.sendKeys(prop.getProperty("Address"));
 		city.sendKeys(prop.getProperty("City"));
 		postcode.sendKeys(prop.getProperty("PostalCode"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		Select country1 = new Select(country);
 		country1.selectByVisibleText(prop.getProperty("Country"));
-		Waits.waitperiod();
+//		Waits.waitperiod();
 		// ScrollPage.scrollPagedown();
 		Select state = new Select(region);
 		state.selectByVisibleText(prop.getProperty("Region/State"));
@@ -179,6 +184,7 @@ public class OrderPlacement extends BaseClass {
 	}
 
 	public void addDeliveryComment() {
+		
 		deliveryComment.sendKeys(prop.getProperty("DeliveryComment"));
 		btndeliveryContinue.click();
 		agreeTerms.click();

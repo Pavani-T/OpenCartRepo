@@ -5,9 +5,27 @@
     <listener class-name="com.opencart.listeners.TestListener" />
 </listeners>
  <parameter name="browser" value="chrome"/>
-  <test thread-count="5" name="Test">
+  <test  name="Test">
   <classes>
-      <class name="com.opencart.testscripts.OpenCartTestscripts"/>
+      <class name="com.opencart.testscripts.OpenCartTestscripts">
+      <methods>
+  		  <exclude name="registerAccount"/>
+          <exclude name="registerAccountFailure"/>
+          <exclude name="login"/>
+          <exclude name="verifyTitle"/>
+          <exclude name="addToCart"/>
+          <include name="uploadFile"/>
+          <exclude name="editLastName"/>
+          <exclude name="orderPlacementWithGuest"/>
+          <exclude name="orderPlacementWithRegister"/>
+          <exclude name="productAvailabitlyInCart"/>
+          <exclude name="removeProductFromCart"/>
+          <exclude name="applyCouponCode"/>
+          <exclude name="emptyCouponCode"/>
+          <exclude name="whishListTest"/>
+           <exclude name="orderHistory"/>
+        </methods>
+        </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

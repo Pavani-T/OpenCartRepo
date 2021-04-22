@@ -28,7 +28,7 @@ public class CouponCode extends BaseClass {
 	 * @FindBy(xpath = "//a[contains(@aria-expanded,'true')]") WebElement
 	 * couponcode;
 	 */
-	 @FindBy(xpath = "//a[contains(.,'Use Coupon Code')]")
+	@FindBy(xpath="//a[@href='#collapse-coupon']")
 	 WebElement couponcode;
 	 @FindBy(xpath = "//input[@id='button-coupon']")
 	 WebElement apply_couponcode;
@@ -107,7 +107,7 @@ public class CouponCode extends BaseClass {
 	 Thread.sleep(2000);
 	 File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 	 try {
-	 FileUtils.copyFile(screenshot, new File("E:\\JavaPractice\\OpenCartRepo\\screenshot" + FileName));
+	 FileUtils.copyFile(screenshot, new File("E:\\Shweta\\OpenCartRepo\\screenshot\\" + FileName));
 	 } catch (IOException e) {
 	 }
 	 }
@@ -139,15 +139,15 @@ public class CouponCode extends BaseClass {
 	 
 	 checkout.click();
 	 Thread.sleep(2000);
-	 /*
-	 B_Fistname.sendKeys(prop.getProperty("Firstname"));
-	 B_lastname.sendKeys(prop.getProperty("Lastname"));
+	 
+	 B_Fistname.sendKeys(prop.getProperty("FirstName"));
+	 B_lastname.sendKeys(prop.getProperty("LastName"));
 	 company.sendKeys(prop.getProperty("Comp"));
 	 Address1.sendKeys(prop.getProperty("add1"));
 	 Address2.sendKeys(prop.getProperty("add2"));
 	 city.sendKeys(prop.getProperty("City1"));
 	 
-	 B_postcode.sendKeys(prop.getProperty("postalcode"));
+	 B_postcode.sendKeys(prop.getProperty("postalcode1"));
 	 Thread.sleep(2000);
 	 
 	 Select sel = new Select(payment_country);
@@ -155,7 +155,7 @@ public class CouponCode extends BaseClass {
 	 
 	 Select sel1 = new Select(B_state);
 	 sel1.selectByVisibleText("Telangana");
-	 cont.click();*/
+	 cont.click();
 	 
 	 continue_address.click();
 	 Thread.sleep(3000);

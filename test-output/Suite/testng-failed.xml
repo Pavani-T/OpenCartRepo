@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <parameter name="browser" value="chrome"/>
   <listeners>
     <listener class-name="com.opencart.listeners.TestListener"/>
   </listeners>
-  <test name="Test(failed)">
+  <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="com.opencart.testscripts.OpenCartTestscripts">
         <methods>
-          <include name="whishListTest"/>
-          <include name="removeProductFromCart"/>
-          <include name="TC_OpenCart_007"/>
-          <include name="orderPlacementWithGuest"/>
+          <include name="uploadFile"/>
           <include name="beforemethod"/>
           <include name="aftermethod"/>
-          <include name="registerAccount"/>
-          <include name="emptyCouponCode"/>
-          <include name="applyCouponCode"/>
         </methods>
       </class> <!-- com.opencart.testscripts.OpenCartTestscripts -->
     </classes>

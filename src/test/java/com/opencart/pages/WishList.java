@@ -20,6 +20,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import com.opencart.constants.BaseClass;
+import com.opencart.utilities.ScrollPage;
+import com.opencart.utilities.Waits;
 
 
 public class WishList extends BaseClass{
@@ -32,9 +34,12 @@ public class WishList extends BaseClass{
 	 WebElement sortby_dropdown;
 	 @FindBy(xpath = "(//i[contains(@class,'fa fa-heart')])[2]")
 	 WebElement wishlist_button;
-	 @FindBy(xpath = "//span[contains(.,'Wish List (1)')]")
+//	 @FindBy(xpath = "//span[contains(.,'Wish List (1)')]")
+	 @FindBy(id = "wishlist-total")
 	 WebElement wishlist_icon;
-	 @FindBy(xpath = "(//i[contains(@class,'fa fa-shopping-cart')])[3]")
+//	 @FindBy(xpath = "(//i[@class='fa fa-shopping-cart']")
+	 
+	 @FindBy(xpath = "//a[@title='Shopping Cart']")
 	 WebElement addtocart;
 	 Date d = new Date();
 	 
@@ -57,11 +62,12 @@ public class WishList extends BaseClass{
 	 wishlist_button.click();
 	 Thread.sleep(2000);
 	 wishlist_icon.click();
+	 Waits.waitperiod();
 	 addtocart.click();
 	 Thread.sleep(2000);
 	 File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 	 try {
-	 FileUtils.copyFile(screenshot, new File("E:\\JavaPractice\\OpenCartRepo\\screenshot" + FileName));
+	 FileUtils.copyFile(screenshot, new File("E:\\JavaPractice\\OpenCartRepo\\screenshot" + "wishlist"+ ".png"));
 	 } catch (IOException e) {
 	 }
 	 

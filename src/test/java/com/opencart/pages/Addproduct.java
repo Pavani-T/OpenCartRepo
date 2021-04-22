@@ -42,6 +42,9 @@ public class Addproduct extends BaseClass {
 		
 	}
 	
+	@FindBy(xpath = "//a[text() ='HP LP3065']")
+	public WebElement hpProduct;
+	
 	@FindBy(xpath="//div[@id='product']//input[@name='quantity']")
 	public  WebElement qty;
 	
@@ -70,7 +73,8 @@ public class Addproduct extends BaseClass {
 	@FindBy(xpath="//div[@class='input-group date']/input")
 	public WebElement deliveryDate;
 	
-	@FindBy(xpath="//a[text()='Use Coupon Code']")
+//	@FindBy(xpath="//a[text()='Use Coupon Code']") wrong xpath
+	@FindBy(xpath="//a[@href='#collapse-coupon']")
 	public WebElement useCouponCode;
 	
 	@FindBy(xpath="//input[@id='input-coupon']")
